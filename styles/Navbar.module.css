@@ -1,0 +1,46 @@
+
+
+.listContainer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    
+  }
+  
+  
+  .link {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 8);
+    height: calc(8vh - 2px); /* Adjust the height to match .listContainer height minus the top and bottom borders */
+    background-color: white;
+    border-left: 1px solid black;
+    letter-spacing: 1px;
+  }
+  
+  .link:first-child {
+    border-left: none;
+  }
+  
+  .listItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  
+  .listItems:hover {
+  background-color: #00022e;
+  color: white;
+  }
+  
+

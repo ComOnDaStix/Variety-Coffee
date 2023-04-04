@@ -1,0 +1,67 @@
+.sliderContainer {
+    margin-right: 10%;
+    width: 100%;
+}
+
+.li {
+  display: flex;
+  
+  margin: 12px 6px;
+}
+
+.img {
+  width: auto;
+  height: 100vh;
+  opacity: 0;
+  animation: slideIn 0.9s forwards;
+  border: 8px solid black;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.button {
+    position: absolute;
+    bottom: -5%;
+    left: 40%;
+    transform: translateX(100%);
+    max-width: 100%;
+    padding: 8px 70px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    min-width: 2rem;
+    min-height: 1rem;
+    letter-spacing: 1px;
+    border: none;
+    border: 1px solid black;
+}
+.button:hover {
+  background-color: #00022e;
+  color: white;
+}
+
+.li:last-child {
+    width: ; /* Add this to prevent the last image from being cut off */
+  }
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    background-color: #00022e;
+    text-align: center;
+    color: white;
+    height: 2.8vh;
+    font-size: 14px;
+}
+
+.container {
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
