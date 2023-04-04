@@ -1,3 +1,5 @@
+
+
 .sliderContainer {
     margin-right: 10%;
     width: 100%;
@@ -5,7 +7,7 @@
 
 .li {
   display: flex;
-  
+  display: block;
   margin: 12px 6px;
 }
 
@@ -46,14 +48,12 @@
     border: none;
     border: 1px solid black;
 }
+
 .button:hover {
   background-color: #00022e;
   color: white;
 }
 
-.li:last-child {
-    width: ; /* Add this to prevent the last image from being cut off */
-  }
 
 @keyframes slideIn {
   0% {
