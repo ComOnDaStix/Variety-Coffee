@@ -1,6 +1,8 @@
 import MainPageSection from "@/components/MainPageSection";
 import styles from "../styles/MainPage.module.css";
 import Link from "next/link";
+import MainPageSectionTwo from "@/components/MainPageSectionTwo";
+import FooterBanner from "@/components/FooterBanner";
 
 const MainPage = () => {
   return (
@@ -17,6 +19,8 @@ const MainPage = () => {
       </div>
     </div>
     <MainPageSection />
+    <MainPageSectionTwo />
+    <FooterBanner />
     </>
   );
 };
