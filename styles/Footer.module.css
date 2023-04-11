@@ -1,0 +1,156 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: -8px;
+    background-color: white;
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+    
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.linkContainer {
+    display: flex;
+
+    justify-content: space-between; 
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+
+
+.logo {
+    display: flex;
+    margin-bottom: 8%;
+}
+
+
+
+.ul {
+    padding: 25px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.li {
+    list-style: none;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.li a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    padding-bottom: 2px;
+}
+
+.li a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 1px solid black;
+}
+
+.links {
+    display: flex;
+   align-items: flex-start;
+    flex-direction: column;
+    text-align: justify;
+    letter-spacing: 1px;
+   
+}
+
+.h2 {
+    margin-bottom: 20%;
+    font-weight: 700;
+    font-size: 15px;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.bottom {
+    margin-right: 4%;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+ 
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 35%;
+    margin-top: 1%;
+  }
+  
+  .emailInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .submitButton {
+    position: absolute;
+    right: 0%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+  .footerInfo {
+    display: flex;
+  }
+
+  .footerInfo2 {
+    display: flex;
+
+  }
+
+  .li2{
+    display: flex;
+    margin: 0 60px;
+    list-style: none;
+    letter-spacing: 1px;
+  }

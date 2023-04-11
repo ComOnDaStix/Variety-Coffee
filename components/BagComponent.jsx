@@ -1,6 +1,6 @@
-const BagComponent = ( {className} ) => {
+const BagComponent = () => {
     return (  
-        <div className={className}>BAG</div>
+        <div>BAG</div>
     );
 }
  

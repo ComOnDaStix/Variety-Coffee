@@ -85,6 +85,17 @@
 
   .img{
     border: 8px solid black;
+    cursor: pointer;
+  }
+
+  .imgContainer{
+    transform: rotate(10deg);
+    transition: transform 0.3s ease;
+  }
+
+  .imgContainer:hover{
+    transform: rotate(-10deg);
+    transition: transform 0.2s ease;
   }
 
   

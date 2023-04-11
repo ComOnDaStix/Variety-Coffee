@@ -1,0 +1,50 @@
+.wrapper {
+    margin-top: 3%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  .bannerContainer {
+    position: relative;
+    width: 100%;
+  }
+  
+  .imgContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .buttonContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .button {
+    background-color: white;
+    color: black;
+    border: none;
+    border: 1px solid black;
+    padding: 8px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 24px;
+    letter-spacing: 1px;
+  }
+  .button:hover {
+   background-color: #00022e;
+    color: white;
+
+  }
+  
+.img {
+    border: 8px solid black;
+}
