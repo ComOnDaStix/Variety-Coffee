@@ -1,6 +1,6 @@
-const BagComponent = () => {
+const BagComponent = ( {className, onClick}) => {
     return (  
-        <div>BAG</div>
+        <div  className={className}  onClick={onClick}>BAG</div>
     );
 }
  

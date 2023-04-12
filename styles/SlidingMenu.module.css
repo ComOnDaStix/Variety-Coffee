@@ -1,0 +1,40 @@
+.slideMenu {
+    position: fixed;
+    left: -100%;
+    width: 680px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 1rem;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .slideMenuOpen {
+    left: 0;
+  }
+
+  .ul {
+    margin-top: 5%;
+    margin-left: 4%;
+  }
+
+  .listItem {
+    font-size: 46px;
+    margin-bottom: 3%;
+    list-style: none;
+  }
+
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .count {
+    font-size: 15px;
+  }
+
+
+ 
+  
