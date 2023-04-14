@@ -1,0 +1,27 @@
+.wrapper {
+    border-bottom: 1px solid black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height: 8vh;
+}
+
+.ul {
+    display: flex;
+}
+
+.li {
+    display: flex;
+    padding: 1rem 2.5rem;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+
+}
