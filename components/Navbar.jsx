@@ -5,6 +5,7 @@ import BagComponent from "../components/BagComponent"
 import SlidingMenu from "./SlidingMenu";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import SmallCart from "./SmallCart";
 
 
 const Navbar = () => {
@@ -69,6 +70,7 @@ const Navbar = () => {
       
     </div>
     <SlidingMenu open={menuOpen}  onClose={closeMenu}/>
+    <SmallCart />
     </>
   );
 };
