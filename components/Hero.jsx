@@ -22,9 +22,6 @@ const Hero = () => {
             className={styles.img}
           />
         </li>
-        <Link href="/">
-          <button className={styles.button}>SHOP ALL</button>
-        </Link>
         <li className={styles.li}>
           <Image
             src={"/heroImg3.webp"}
@@ -34,6 +31,9 @@ const Hero = () => {
           />
         </li>
       </ul>
+      <Link href="/">
+        <button className={styles.button}>SHOP ALL</button>
+      </Link>
     </div>
   );
 };

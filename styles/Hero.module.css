@@ -1,8 +1,7 @@
-
-
 .sliderContainer {
-    margin-right: 10%;
-    width: 100%;
+  position: relative;
+  margin-right: 10%;
+  width: 100%;
 }
 
 .li {
@@ -24,7 +23,6 @@
   justify-content: center;
   overflow-x: scroll;
   scroll-behavior: smooth;
-  
 }
 
 .slider::-webkit-scrollbar {
@@ -32,28 +30,28 @@
 }
 
 .button {
-    position: absolute;
-    bottom: -5%;
-    left: 40%;
-    transform: translateX(100%);
-    max-width: 100%;
-    padding: 8px 70px;
-    cursor: pointer;
-    background-color: white;
-    border-radius: 15px;
-    font-size: 15px;
-    min-width: 2rem;
-    min-height: 1rem;
-    letter-spacing: 1px;
-    border: none;
-    border: 1px solid black;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  max-width: 100%;
+  padding: 8px 70px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 15px;
+  font-size: 15px;
+  min-width: 2rem;
+  min-height: 1rem;
+  letter-spacing: 1px;
+  border: none;
+  border: 1px solid black;
+  z-index: 2;
 }
 
 .button:hover {
   background-color: #00022e;
   color: white;
 }
-
 
 @keyframes slideIn {
   0% {
@@ -63,5 +61,42 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 767px) {
+
+  .sliderContainer {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+ 
+
+  .li {
+    display: flex;
+    flex-direction: ;
+    margin: 8px 4px;
+  }
+
+  .img {
+    height: 60vh;
+  }
+
+  .button {
+    bottom: 50%;
+    left: 50%;
+    padding: 4px 35px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .button {
+    bottom: 50%;
+    left: 50%;
+    padding: 6px 50px;
+    font-size: 14px;
   }
 }

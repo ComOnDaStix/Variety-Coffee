@@ -36,5 +36,17 @@
   }
 
 
- 
+  @media (max-width: 767px) {
+    .slideMenu {
+      width: 70%;
+      margin-right: 5%;
+      height: 50vh;
+    }
+  
+    .listItem {
+      font-size: 32px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
   

@@ -40,6 +40,14 @@
     font-size: 25px;
     font-weight: 100;
   }
+
+  .p {
+    margin-bottom: 5%;
+  }
+
+  .videoAutoPlay {
+    border: 8px solid black;
+  }
   
   
   
