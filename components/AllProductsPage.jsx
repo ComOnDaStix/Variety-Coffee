@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { getProducts } from "../path/to/your/getProducts/file";
 
 const AllProductsPage = ({ category }) => {
     const [products, setProducts] = useState([]);

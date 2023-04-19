@@ -1,0 +1,60 @@
+.wrapper {
+    background-color:  #00022e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textContainer {
+    margin-top: 20%;
+    text-align: center;
+    width: 70%;
+}
+
+.p {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.h2 {
+    font-size: 40px;
+    margin-top: 3%;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+.h22 {
+    font-size: 40px;
+    margin-top: 8%;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+.button {
+    max-width: 100%;
+    padding: 8px 70px;
+    cursor: pointer;
+    background-color:  #00022e;
+    border-radius: 15px;
+    font-size: 15px;
+    min-width: 2rem;
+    min-height: 1rem;
+    letter-spacing: 1px;
+    border: none;
+    border: 1px solid white;
+    color: white;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+.button:hover {
+   background-color: white;
+   color: #00022e;
+}
+

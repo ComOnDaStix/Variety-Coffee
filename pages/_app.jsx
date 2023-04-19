@@ -8,10 +8,10 @@ export default function App({ Component, pageProps }) {
   return (
     <ApolloProvider client={client}>
       <CartProvider>
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-    </CartProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </CartProvider>
     </ApolloProvider>
   );
 }

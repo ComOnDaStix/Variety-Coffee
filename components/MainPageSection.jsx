@@ -35,6 +35,7 @@ const MainPageSection = () => {
                 </div>
             </div>
         </div>
+        
     );
 }
  
