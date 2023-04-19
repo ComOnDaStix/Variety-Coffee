@@ -1,0 +1,191 @@
+.wrapper {
+  margin-top: 3%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  margin-bottom: 2%;
+}
+
+.topSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%; /* Match bottom section's width */
+  margin: 0 auto; /* Center the section */
+}
+
+.midSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2%;
+  width: 80%; /* Match bottom section's width */
+  margin: 2% auto 0 auto; /* Center the section */
+}
+
+.borderbottom {
+  border-bottom: 1px solid grey;
+  width: 80%; /* Match bottom section's width */
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin: 2% auto 0 auto; /* Center the section */
+}
+
+.bottomSection {
+    margin-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2%;
+  width: 100%;
+  margin-bottom: 2%;
+  margin: 2% auto; /* Center the section */
+}
+
+.productSection {
+  display: flex;
+  align-items: center;
+  width: 70%; /* Fixed width */
+}
+
+.productInfo {
+  text-align: center;
+  width: 20%;
+}
+
+
+.product {
+  margin-left: 25%;
+}
+
+.title {
+  margin-left: 10%;
+}
+
+.description {
+  margin-right: 10%;
+}
+
+.counter {
+    margin-right: 4%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 20%; /* Fixed width */
+}
+
+.deleteBtnContainer {
+  width: 5%; /* Fixed width and adjust for space */
+  margin-right: 5%; /* Space between deleteBtn and price */
+}
+
+.deleteBtn {
+  cursor: pointer;
+}
+
+.counterContainer {
+  margin-right: 5%;
+}
+
+.priceContainer {
+  margin-right: 10%;
+  width: 20%; /* Fixed width */
+}
+
+.price {
+    margin-left: 30%;
+}
+
+.name {
+  margin-bottom: 10%;
+}
+
+.borderbottom2 {
+  border-bottom: 1px solid grey;
+  width: 80%; /* Match bottom section's width */
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin: 2% auto 0 auto; /* Center the section */
+}
+
+.emptyh1 {
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.continueShoppingBtn {
+  margin-top: 5%;
+  max-width: 100%;
+  padding: 8px 70px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 15px;
+  font-size: 15px;
+  min-width: 2rem;
+  min-height: 1rem;
+  letter-spacing: 1px;
+  border: none;
+  border: 1px solid black;
+}
+
+.continueShoppingBtn:hover {
+  background-color: #00022e;
+  color: white;
+}
+
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subTotalContainer {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 65%;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.subTotal {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.span {
+    margin-left: 10%;
+}
+
+.checkOut {
+    margin-top: 5%;
+    max-width: 100%;
+    padding: 8px 70px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    min-width: 2rem;
+    min-height: 1rem;
+    letter-spacing: 1px;
+    border: none;
+    border: 1px solid black;
+}
+
+.checkOut:hover {
+    background-color: #00022e;
+  color: white;
+}
+
+.taxes {
+    margin-top: 5%;
+}

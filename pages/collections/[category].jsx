@@ -1,37 +1,46 @@
 import { useRouter } from "next/router";
 import { useQuery, gql } from "@apollo/client";
+import { useContext } from "react";
 import styles from "../../styles/categoryStyles.module.css";
 import Hero2 from "@/components/Hero2";
 import ProductsNavBar from "@/components/ProductsNavBar";
 import Button from "@/components/Button";
-import { useContext } from "react";
+
 import { CartContext } from "../../context/CartContext"
 
+
 const GET_PRODUCTS_BY_CATEGORY = gql`
-  query GetProductsByCategory($query: String) {
-    products(first: 100, query: $query) {
-      edges {
-        node {
-          id
-          title
-          description
-          priceRange {
-            minVariantPrice {
-              amount
-              currencyCode
+query GetProductsByCategory($query: String) {
+  products(first: 100, query: $query) {
+    edges {
+      node {
+        id
+        title
+        description
+        variants(first: 50) {
+          edges {
+            node {
+              id
             }
           }
-          images(first: 1) {
-            edges {
-              node {
-                src
-              }
+        }
+        priceRange {
+          minVariantPrice {
+            amount
+            currencyCode
+          }
+        }
+        images(first: 1) {
+          edges {
+            node {
+              src
             }
           }
         }
       }
     }
   }
+}
 `;
 
 const CategoryPage = () => {
@@ -53,6 +62,7 @@ const CategoryPage = () => {
 
   return (
     <>
+  
       <Hero2 />
       <ProductsNavBar />
       <h1 className={styles.h1}>
@@ -64,6 +74,7 @@ const CategoryPage = () => {
             const priceInUSD = parseFloat(
               product.priceRange.minVariantPrice.amount
             ).toFixed(2);
+            const variantId = product.variants.edges[0].node.id;
 
             return (
               <div key={product.id}>
@@ -81,9 +92,20 @@ const CategoryPage = () => {
                       <p>{product.description}</p>
                     )}
                   </div>
-                  <Button className={styles.btn} onClick={() => addItem(product)}>
-                    {priceInUSD} • ADD TO BAG
-                  </Button>
+                  <Button
+  className={styles.btn}
+  onClick={() =>
+    addItem({
+      id: product.id,
+      title: product.title,
+      price: priceInUSD,
+      image: product.images.edges[0].node,
+      variantId: variantId,
+    })
+  }
+>
+  {priceInUSD} • ADD TO BAG
+</Button>
                 </div>
               </div>
             );
