@@ -1,15 +1,14 @@
-*{
+* {
   margin: 0;
   font-family: 'Poppins', sans-serif;
- 
 }
 
 body {
-  background-color:#D3D3D3 /* Replace with the color you prefer */
+  background-color: #d3d3d3; /* Replace with the color you prefer */
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .no-scroll {
   overflow: hidden;
 }
-
-
