@@ -12,7 +12,7 @@ const MainPageSection = () => {
                         <button className={styles.button}>EXPLORE</button>
                     </div>
                     <div className={styles.imgContainer}>
-                        <Image src={"/sectionImg2.webp"} className={styles.img} width={305} height={384}/>
+                    <Image src={"/sectionImg2.webp"} className={`${styles.img} ${styles.smallImage}`} width={305} height={384} alt="sectionImg2"/>
                     </div>
                     <div className={styles.textContainerTwo}>
                     <p className={styles.p}>OUR LOCATIONS</p>
@@ -20,17 +20,17 @@ const MainPageSection = () => {
                         <button className={styles.button}>EXPLORE</button>
                     </div>
                     <div className={styles.imgContainer}>
-                        <Image className={styles.img} src={"/sectionImg4.webp"} width={305} height={384}/>
+                    <Image className={`${styles.img} ${styles.smallImage}`} src={"/sectionImg4.webp"} width={305} height={384} alt="sectionImg4"/>
                     </div>
                 </div>
             </div>
             <div className={styles.rightContainer}>
                 <div className={styles.right}>
                     <div className={styles.imgContainer2}>
-                    <Image src={"/sectionImg5.webp"} width={626} height={660} className={styles.img}/>
+                    <Image src={"/sectionImg5.webp"} className={`${styles.img} ${styles.smallImage}`} width={626} height={660} alt="sectionImg5"/>
                     </div>
                     <div className={styles.imgContainer3}>
-                    <Image src={"/sectionImg3.webp"} width={626} height={651} className={styles.img}/>
+                    <Image src={"/sectionImg3.webp"} className={`${styles.img} ${styles.smallImage}`} width={626} height={651} alt="sectionImg3"/>
                     </div>
                 </div>
             </div>

@@ -82,7 +82,7 @@ const CategoryPage = () => {
                   <div className={styles.imgContainer}>
                     <img
                       src={product.images.edges[0].node.src}
-                      alt={product.title}
+                      alt={product.title} 
                       className={styles.img}
                     />
                   </div>

@@ -1,9 +1,23 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.link {
+  text-decoration: none;
+}
+
+.textContainer {
+  flex-grow: 1;
+}
+
 .textContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 .p {
@@ -44,9 +58,21 @@
    .wrapper {
     display: flex;
     flex-direction: column;
+
+   
    }
 
    .textContainer {
+    display: flex;
+    flex-direction: column;
+   }
+   
+   .h2 {
+    margin-top: 2%;
+    width: 90%;
+   }
+
+   .button {
     display: flex;
     flex-direction: column;
    }

@@ -63,13 +63,43 @@
  color: black;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .wrapper {
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   padding: 0;
+   display: none;
+  }
+
+   .smallImage {
+    width: 50% !important;
+    height: auto !important;
+  }
+
+  .container {
     display: flex;
     flex-direction: column;
   }
 
-  .container {
+  .imagesContainer {
+    
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .li {
+   display: flex;
+   flex-direction: column;
+  }
+
+  .img {
+    width: 100%;
+    border: none;
+  }
+
+  .textContainer {
     display: flex;
     flex-direction: column;
   }

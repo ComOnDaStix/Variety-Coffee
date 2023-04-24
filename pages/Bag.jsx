@@ -89,6 +89,7 @@ const Bag = () => {
                     width={240}
                     height={280}
                     className={styles.product}
+                    alt={`Product image of ${item.title}`}
                   />
                   <div className={styles.productInfo}>
                     <h2 className={styles.name}>{item.title}</h2>

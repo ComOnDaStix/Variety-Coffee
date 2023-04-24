@@ -1,14 +1,17 @@
 import Image from "next/image";
+import styles from "../styles/Hero2.module.css";
 
 const Hero2 = () => {
   return (
-    <div style={{ position: "relative", width: "100%", height: "420px", overflow: "hidden" }}>
+    <div className={styles.wrapper}>
       <Image
         src="/heroimg4.webp"
         layout="responsive"
         width={1900}
         height={420}
         objectFit="cover"
+        className={styles.img}
+        alt="heroimg4"
       />
     </div>
   );

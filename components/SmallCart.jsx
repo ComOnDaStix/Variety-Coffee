@@ -63,7 +63,10 @@ const SmallCart = ({ navbarRef }) => {
   return (
     <>
       {visible && <div className={styles.overlay}></div>}
-      <div className={styles.notificationWrapper} ref={smallCartRef}>
+      <div
+        className={`${styles.notificationWrapper} ${styles.smallCartMobile}`}
+        ref={smallCartRef}
+      >
         <div className={styles.notification}>
           <p>Item added to your bag</p>
           <div className={styles.content}>
