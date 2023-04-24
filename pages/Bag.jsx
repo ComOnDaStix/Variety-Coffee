@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useContext, useEffect } from "react";
 import { CartContext } from "../context/CartContext";
 import Link from "next/link";
-import { CREATE_CHECKOUT } from "./graphql/graphql";
+import { CREATE_CHECKOUT } from "../graphql/graphql";
 import { useMutation } from "@apollo/client";
 
 const Bag = () => {
