@@ -13,7 +13,7 @@ const Chemex = () => {
             </h3>
           </div>
           <div className={styles.imgContainer}>
-            <Image src={"/chemex.webp"} width={603} height={603} className={styles.img} />
+            <Image src={"/chemex.webp"} width={603} height={603} className={styles.img} alt="Aeropress brewing method"/>
           </div>
         </div>
   

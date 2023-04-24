@@ -25,3 +25,17 @@
     letter-spacing: 1px;
 
 }
+
+@media (max-width: 768px) {
+    .wrapper {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .ul {
+        display: flex;
+    }
+}

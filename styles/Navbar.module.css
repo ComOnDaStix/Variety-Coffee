@@ -1,105 +1,61 @@
-
-
 .listContainer {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    background-color: white;
-    
-  }
-  
-  
-  .link {
-    text-decoration: none;
-    list-style: none;
-    color: black;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: calc(100% / 8);
-    height: calc(8vh - 2px); /* Adjust the height to match .listContainer height minus the top and bottom borders */
-    background-color: white;
-    border-left: 1px solid black;
-    letter-spacing: 1px;
-  }
-  
-  .lin:first-child {
-    border-left: none;
-  }
-  
-  .listItems {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-  }
-  
-  
-  .listItems:hover {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.link {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 3);
+  height: calc(8vh - 2px);
+  background-color: white;
+  border-left: 1px solid black;
+  letter-spacing: 1px;
+}
+
+.link:first-child {
+  border-left: none;
+}
+
+.listItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.listItems:hover {
   background-color: #00022e;
   color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+ 
+
+  .listItems,
+  .logo {
+    width: calc(50% / 3);
   }
 
-  @media (max-width: 768px) {
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  
-    .listContainer {
-      flex-direction: column;
-      display: flex;
-    }
-  
-    .link {
-      display: none;
-    }
-  
-    .link:first-child {
-      display: flex;
-      border-left: none;
-      border-bottom: none;
-    }
-  
-    .link:last-child {
-      display: flex;
-      border-bottom: none;
-    }
-  
-    .listItems {
-      font-size: 13px;
-    }
+  .logo {
+    margin-left: 35%;
   }
-  
-  @media (max-width: 480px) {
-    .listContainer {
-      flex-direction: column;
-    }
-  
-    .link {
-      font-size: 11px;
-      width: 100%;
-      height: calc(4vh - 2px);
-    }
-  
-    .link:not(:last-child) {
-      border-bottom: 1px solid black;
-    }
-  
-    .link:last-child {
-      border-left: none;
-    }
-
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-
-
+}

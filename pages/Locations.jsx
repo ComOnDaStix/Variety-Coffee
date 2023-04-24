@@ -37,6 +37,7 @@ const Locations = () => {
                   width={510}
                   height={574}
                   className={styles.imgLeft}
+                  alt="sectionimg3"
                 />
               </Link>
             </div>
@@ -60,6 +61,7 @@ const Locations = () => {
                   width={550}
                   height={820}
                   className={styles.imgLeft}
+                  alt="location4"
                 />
               </Link>
             </div>
@@ -82,6 +84,7 @@ const Locations = () => {
                   width={545}
                   height={362}
                   className={styles.imgLeft}
+                  alt="locations5"
                 />
               </Link>
             </div>
@@ -104,6 +107,7 @@ const Locations = () => {
                   width={550}
                   height={571}
                   className={styles.imgLeft}
+                  alt="location2"
                 />
               </Link>
             </div>
@@ -126,6 +130,7 @@ const Locations = () => {
                   width={550}
                   height={365}
                   className={styles.image5}
+                  alt="location6"
                 />
               </Link>
             </div>
@@ -150,6 +155,7 @@ const Locations = () => {
                   width={550}
                   height={736}
                   className={styles.imgRight}
+                  alt="location7"
                 />
               </Link>
             </div>
@@ -172,6 +178,7 @@ const Locations = () => {
                   width={545}
                   height={695}
                   className={styles.imgRight}
+                  alt="location8"
                 />
               </Link>
             </div>
@@ -194,6 +201,7 @@ const Locations = () => {
                   width={550}
                   height={365}
                   className={styles.imgRight}
+                  alt="location9"
                 />
               </Link>
             </div>

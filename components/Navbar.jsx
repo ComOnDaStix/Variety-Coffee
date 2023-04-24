@@ -4,7 +4,7 @@ import Image from "next/image";
 import BagComponent from "../components/BagComponent";
 import SlidingMenu from "./SlidingMenu";
 import { useState, useEffect, useRef } from "react";
-
+import SecondarySlidingMenu from "./SecondarySlidingMenu";
 import SmallCart from "./SmallCart";
 
 const Navbar = ({ smallCartVisible }) => {
@@ -12,6 +12,23 @@ const Navbar = ({ smallCartVisible }) => {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileView, setMobileView] = useState(false);
+  const [secondaryMenuOpen, setSecondaryMenuOpen] = useState(false);
+  const [shopMenuOpen, setShopMenuOpen] = useState(false);
+
+  const toggleSecondaryMenu = () => {
+    setSecondaryMenuOpen(!secondaryMenuOpen);
+    setShopMenuOpen(false);
+  };
+
+  const toggleShopMenu = () => {
+    setShopMenuOpen(!shopMenuOpen);
+    setSecondaryMenuOpen(false);
+  };
+
+  const closeMenus = () => {
+    setSecondaryMenuOpen(false);
+    setShopMenuOpen(false);
+  };
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -21,7 +38,7 @@ const Navbar = ({ smallCartVisible }) => {
     setMenuOpen(false);
   };
 
-   useEffect(() => {
+  useEffect(() => {
     const checkMobileView = () => {
       setMobileView(window.innerWidth <= 768);
     };
@@ -45,7 +62,7 @@ const Navbar = ({ smallCartVisible }) => {
     };
   }, [menuOpen]);
 
-  return (
+return (
     <>
       <div className={styles.wrapper} ref={navbarRef}>
         {mobileView ? (
@@ -54,8 +71,8 @@ const Navbar = ({ smallCartVisible }) => {
               MENU
             </li>
             <Link href="/" className={styles.link}>
-              <li>
-                <Image src={"/logo.avif"} width={87} height={40} />
+              <li className={styles.logo}>
+                <Image src={"/logo.avif"} width={87} height={40} className={styles.logo2} alt="logo"/>
               </li>
             </Link>
             <Link href="/Bag" className={styles.link}>
@@ -102,19 +119,19 @@ const Navbar = ({ smallCartVisible }) => {
                 LOG IN
               </li>
             </Link>
-  
+
             <Link href="/Bag" className={styles.link}>
               <BagComponent className={styles.listItems} onClick={closeMenu} />
             </Link>
           </ul>
         )}
       </div>
-  
+     
       <SlidingMenu open={menuOpen} onClose={closeMenu} />
       <SmallCart navbarRef={navbarRef} />
     </>
   );
-        }
-  
-  export default Navbar;
+}
+
+export default Navbar;
   

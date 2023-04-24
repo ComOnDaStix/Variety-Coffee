@@ -24,7 +24,7 @@ const Brewing = () => {
                         {v60Hover ? (
                             <video src={"/v60.mp4"} width={417} height={417} autoPlay loop muted className={styles.videoAutoPlay} />
                         ) : (
-                            <Image src={"/v60.webp"} width={417} height={417} className={styles.img} />
+                            <Image src={"/v60.webp"} width={417} height={417} className={styles.img}  alt="V60 brewing method"/>
                         )}
                         <div className={styles.title}>
                             <p className={styles.p}>V60</p>
@@ -38,7 +38,7 @@ const Brewing = () => {
                         {chemexHover ? (
                             <video src={"/chemex.mp4"} width={417} height={417} autoPlay loop muted className={styles.videoAutoPlay} />
                         ) : (
-                            <Image src={"/chemex.webp"} width={417} height={417} className={styles.img} />
+                            <Image src={"/chemex.webp"} width={417} height={417} className={styles.img}  alt="chemex brewing method"/>
                         )}
                         <div className={styles.title}>
                             <p className={styles.p}>CHEMEX</p>
@@ -52,7 +52,7 @@ const Brewing = () => {
                         {aeropressHover ? (
                             <video src={"/aeropress.mp4"} width={417} height={417} autoPlay loop muted className={styles.videoAutoPlay} />
                         ) : (
-                            <Image src={"/aeropress.webp"} width={417} height={417} className={styles.img} />
+                            <Image src={"/aeropress.webp"} width={417} height={417} className={styles.img}  alt="Aeropress brewing method"/>
                         )}
                         <div className={styles.title}>
                             <p className={styles.p}>AEROPRESS</p>

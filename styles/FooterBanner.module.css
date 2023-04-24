@@ -12,9 +12,7 @@
   }
   
   .bannerContainer {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: relative;
   }
   
   .imgContainer {
@@ -22,9 +20,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 359px; /* Limit the size of the container */
   }
+  
   
   .buttonContainer {
     position: absolute;
@@ -52,20 +49,39 @@
   
 .img {
     border: 8px solid black;
-    width: 100%;
+   width: auto;
     height: auto;
 }
 
+
+
 @media (max-width: 767px) {
+
+  .wrapper {
+    height: 40vh;
+  }
+  
   .button {
+    width: 110%;
+   margin-bottom: 160%;
     padding: 6px 20px;
     font-size: 12px;
   }
 
-  .imgContainer {
-    width: 70%;
-    max-width: none;
+  .img {
+    margin-bottom: 90%;
+    margin-left: 25%;
+    width: 50%; /* Adjust the width as needed */
+    height: auto;
   }
+  
+
+  .imgContainer {
+    width: 100%;
+    max-width: none;
+   
+  }
+  
 }
 
 
@@ -75,8 +91,21 @@
     font-size: 14px;
   }
 
-  .imgContainer {
-    width: 80%;
-    max-width: none;
+ .img1 {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .img {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ }
+
+  .bannerContainer {
+    display: flex;
+    flex-direction: column;
   }
+
+  
 }

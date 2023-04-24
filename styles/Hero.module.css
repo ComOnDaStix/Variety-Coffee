@@ -1,6 +1,5 @@
 .sliderContainer {
   position: relative;
-  margin-right: 10%;
   width: 100%;
 }
 
@@ -31,8 +30,8 @@
 
 .button {
   position: absolute;
-  bottom: 50%;
-  left: 50%;
+  bottom: 10%;
+  left: 60%;
   transform: translate(-50%, 50%);
   max-width: 100%;
   padding: 8px 70px;
@@ -65,38 +64,73 @@
 }
 
 @media (max-width: 767px) {
-
   .sliderContainer {
     display: flex;
     flex-direction: column;
     width: auto;
   }
 
- 
+  .button {
+    padding: 8px 40px;
+    bottom: 10%;
+  }
+
+  .imgContainer {
+    display: flex;
+  }
+
+  .slider {
+    display: flex;
+  }
 
   .li {
     display: flex;
-    flex-direction: ;
-    margin: 8px 4px;
   }
 
   .img {
-    height: 60vh;
+    display: flex;
   }
 
-  .button {
-    bottom: 50%;
-    left: 50%;
-    padding: 4px 35px;
-    font-size: 12px;
+  .smallImage {
+    height: 60vh !important;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 375px) and (max-width: 667px) {
+  .sliderContainer {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
   .button {
-    bottom: 50%;
-    left: 50%;
-    padding: 6px 50px;
-    font-size: 14px;
+    padding: 4px 20px; 
+    bottom: 10%;
+
+    overflow: hidden; 
+
+    width: 40%; 
+    line-height: 1.2; 
+    font-size: 14px; 
+  }
+
+  .imgContainer {
+    display: flex;
+  }
+
+  .slider {
+    display: flex;
+  }
+
+  .li {
+    display: flex;
+  }
+
+  .img {
+    display: flex;
+  }
+
+  .smallImage {
+    height: 60vh !important;
   }
 }

@@ -91,3 +91,20 @@
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .notificationWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .notification {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .smallCartMobile {
+    width: 100%;
+    position: absolute;
+    left: 0; /* Or any value to your preference */
+  }
+}

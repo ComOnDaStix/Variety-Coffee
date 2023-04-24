@@ -13,6 +13,8 @@ const Footer = () => {
               width={300}
               height={140}
               className={styles.img}
+              alt="logo2"
+              priority
             />
           </div>
           <div className={styles.linkContainer}>

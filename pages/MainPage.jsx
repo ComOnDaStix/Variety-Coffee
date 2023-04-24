@@ -15,7 +15,7 @@ const MainPage = () => {
           changes frequently throughout the year. The fresher the crop, the
           better the coffee.
         </h2>
-        <Link href="/"><button className={styles.button}>OUR APPROACH</button></Link>
+        <Link href="/" className={styles.link}><button className={styles.button}>OUR APPROACH</button></Link>
       </div>
     </div>
     <MainPageSection />

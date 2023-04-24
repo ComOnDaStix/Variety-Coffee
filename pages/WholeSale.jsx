@@ -6,7 +6,7 @@ const WholeSale = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.imgContainer}>
-          <Image src={"/wholesale.jpg"} width={606.5} height={606.5} className={styles.img}/>
+          <Image src={"/wholesale.jpg"} width={606.5} height={606.5} className={styles.img}  alt="wholesale"/>
         </div>
       </div>
       <div className={styles.textContainer}>
