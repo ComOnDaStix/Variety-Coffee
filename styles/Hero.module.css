@@ -52,6 +52,10 @@
   color: white;
 }
 
+.imgContainer {
+  display: flex; /* Added from feature-branch */
+}
+
 @keyframes slideIn {
   0% {
     opacity: 0;
