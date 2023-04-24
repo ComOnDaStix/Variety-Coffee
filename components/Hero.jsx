@@ -13,6 +13,7 @@ const Hero = () => {
     height={552}
     className={`${styles.img} ${styles.smallImage}`}
     alt="heroImg"
+    priority
   />
 </li>
 <li className={styles.li}>
@@ -32,6 +33,7 @@ const Hero = () => {
     height={552}
     className={`${styles.img} ${styles.smallImage}`}
     alt="heroImg3"
+    priority
   />
 </li>
       </ul>

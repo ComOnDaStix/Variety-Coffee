@@ -156,6 +156,7 @@ const Locations = () => {
                   height={736}
                   className={styles.imgRight}
                   alt="location7"
+                  priority
                 />
               </Link>
             </div>

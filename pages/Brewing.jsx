@@ -38,7 +38,7 @@ const Brewing = () => {
                         {chemexHover ? (
                             <video src={"/chemex.mp4"} width={417} height={417} autoPlay loop muted className={styles.videoAutoPlay} />
                         ) : (
-                            <Image src={"/chemex.webp"} width={417} height={417} className={styles.img}  alt="chemex brewing method"/>
+                            <Image src={"/chemex.webp"} width={417} height={417} className={styles.img}  alt="chemex brewing method" priority/>
                         )}
                         <div className={styles.title}>
                             <p className={styles.p}>CHEMEX</p>
