@@ -22,6 +22,7 @@ const Hero = () => {
     height={552}
     className={`${styles.img} ${styles.smallImage}`}
     alt="heroImg2"
+    priority
   />
 </li>
 <li className={styles.li}>
