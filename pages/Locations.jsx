@@ -33,11 +33,11 @@ const Locations = () => {
                 </div>
 
                 <Image
-                  src={"/sectionimg3.webp"}
+                  src={"/sectionImgNew.webp"}
                   width={510}
                   height={574}
                   className={styles.imgLeft}
-                  alt="sectionimg3"
+                  alt="sectionImgNew"
                 />
               </Link>
             </div>
