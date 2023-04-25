@@ -16,7 +16,7 @@ const V60 = () => {
             </h3>
           </div>
           <div className={styles.imgContainer}>
-            <Image src={"/brewimage.webp"} width={603} height={603} className={styles.img}  alt="v60"/>
+            <Image src={"/WOW.webp"} width={603} height={603} className={styles.img}  alt="WOW"/>
           </div>
         </div>
   
