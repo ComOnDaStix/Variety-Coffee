@@ -24,7 +24,7 @@ const Brewing = () => {
                         {v60Hover ? (
                             <video src={"/v60.mp4"} width={417} height={417} autoPlay loop muted className={styles.videoAutoPlay} />
                         ) : (
-                            <Image src={"/v60.webp"} width={417} height={417} className={styles.img}  alt="V60 brewing method"/>
+                            <Image src={"/v60NewImg.webp"} width={417} height={417} className={styles.img}  alt="V60 brewing method"/>
                         )}
                         <div className={styles.title}>
                             <p className={styles.p}>V60</p>
