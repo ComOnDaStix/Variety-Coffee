@@ -29,11 +29,11 @@ const MainPageSectionTwo = () => {
         <ul className={styles.imagesContainer}>
           <li className={styles.li}>
             <Image
-              src={"/coffeepourTwo.webp"}
+              src={"/coffeePour2.webp"}
               width={461}
               height={459}
               className={styles.img}
-              alt="coffeepourTwo"
+              alt="coffeePour2"
             />
           </li>
           <div className={styles.textContainer}>
@@ -49,11 +49,11 @@ const MainPageSectionTwo = () => {
         <ul className={styles.imagesContainer}>
           <li className={styles.li}>
             <Image
-              src={"/coffeepourThree.webp"}
+              src={"/coffeePour3.webp"}
               width={461}
               height={459}
               className={styles.img}
-              alt="coffeepourThree"
+              alt="coffeePour3"
             />
           </li>
           <div className={styles.textContainer}>
